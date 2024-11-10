@@ -1,0 +1,5 @@
+bkai-igh-neopolyp/
+checkpoints/
+data/__pycache__
+src/model/__pycache__
+.DS_Store
