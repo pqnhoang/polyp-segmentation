@@ -1,4 +1,4 @@
-import neopolyp_bkai
+from .transform import Transform
 from torch.utils.data import Dataset
 import cv2
 import numpy as np
@@ -25,7 +25,7 @@ class NeoPolypDataset(Dataset):
         else:
             self.image_paths = image_dir
             self.length = len(self.image_paths)
-        self.transform = neopolyp_bkai.Transform(session) if transform else None
+        self.transform = Transform(session) if transform else None
 
     @staticmethod
     def _process_mask(mask_path):

@@ -1,6 +1,6 @@
 import argparse
-from ..model.model import NeoPolypModel
-from ..dataset.dataset import NeoPolypDataset
+from .model.model import NeoPolypModel
+from data.dataset import NeoPolypDataset
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from torchvision.transforms import Resize, InterpolationMode, ToPILImage
